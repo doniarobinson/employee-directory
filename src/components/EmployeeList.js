@@ -1,13 +1,25 @@
 import React from 'react';
 import Employee from './Employee';
+import axios from 'axios';
 
-const employee = {
-    name: "test"
-};
+var flattenObject = require('flatten-object');
 
 class EmployeeList extends React.Component {
-    constructor(props) {
-        super(props);
+    state = {
+        employees: []
+    };
+
+    componentDidMount() {
+        axios.get(`https://randomuser.me/api/?page=11&results=10&seed=dmr&inc=name,picture,location,phone, email`)
+          .then(res => {
+            const employees = res.data.results[0];
+
+            // flatten object
+            const flatEmployees = flattenObject(employees, 3);
+
+            this.setState({ flatEmployees });
+            //console.log(this.state.flatEmployees);
+        });
     }
 
     render() {
@@ -15,7 +27,7 @@ class EmployeeList extends React.Component {
           <div className="EmployeeList">
     
             <h2>Employee List</h2>
-            <Employee employee={employee} />
+            <Employee {...this.state.flatEmployees} />
     
           </div>
         );
