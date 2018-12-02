@@ -26,7 +26,7 @@ class EmployeeList extends React.Component {
         return (
           <div className="EmployeeList">
     
-            <h2>Employee List</h2>
+            <h4>Employee List</h4>
             <Employee {...this.state.flatEmployees} />
     
           </div>

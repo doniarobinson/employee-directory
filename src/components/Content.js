@@ -5,12 +5,14 @@ import EmployeeList from './EmployeeList';
 import Benefits from './Benefits';
 import Profile from './Profile';
 
+import './Content.css';
+
 class Content extends React.Component {
     render() {
         return (
           <div className="Content">
     
-            <h2>CONTENT AREA</h2>
+            <h3>CONTENT AREA</h3>
 
             <Switch>
               <Route exact path='/' component={Home} />

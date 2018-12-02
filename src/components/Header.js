@@ -8,6 +8,7 @@ class Header extends React.Component {
         return (
           <div className="Header">   
             <header>
+              <h3>MENU</h3>
             <nav>
               <ul>
                 <li><Link to='/'>Home</Link></li>

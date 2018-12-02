@@ -5,9 +5,9 @@ class Home extends React.Component {
         return (
           <div className="Home">
     
-            <h3>Home Page</h3>
+            <h4>Home Page</h4>
     
-            <p>This is the home page</p>
+            <p>This is the home page.</p>
             
           </div>
         );

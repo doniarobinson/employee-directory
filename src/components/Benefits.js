@@ -5,8 +5,10 @@ class Benefits extends React.Component {
         return (
           <div className="Benefits">
     
-            <h3>Benefits Page</h3>
+            <h4>Benefits Page</h4>
     
+            <p>This is the benefits page.</p>
+
           </div>
         );
     }

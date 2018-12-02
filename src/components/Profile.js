@@ -5,8 +5,10 @@ class Profile extends React.Component {
         return (
           <div className="Profile">
     
-            <h3>Profile Page</h3>
+            <h4>Profile Page</h4>
     
+            <p>This is where someone might update their profile.</p>
+
           </div>
         );
     }
