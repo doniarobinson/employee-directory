@@ -1,6 +1,6 @@
 import React from 'react';
-import Employee from './Employee';
 import axios from 'axios';
+import Employee from './Employee';
 
 var flattenObject = require('flatten-object');
 

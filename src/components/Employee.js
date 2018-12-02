@@ -9,10 +9,7 @@ class Employee extends React.Component {
             City: {this.props.city_0}<br />
             Email: {this.props.email_0}<br />
             Phone: {this.props.phone_0}<br />
-            <img 
-      src={this.props.thumbnail_0}
-      alt="thmb"
-      />
+            <img src={this.props.thumbnail_0} alt="thmb" />
             </p>
     
           </div>

@@ -8,6 +8,7 @@ class Home extends React.Component {
             <h3>Home Page</h3>
     
             <p>This is the home page</p>
+            
           </div>
         );
     }

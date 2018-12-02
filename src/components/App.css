@@ -1,11 +1,13 @@
 .App {
-  text-align: center;
   background-color: #1f2866;
 }
 
 h2, h3, p {
   color: white;
 }
+
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

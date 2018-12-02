@@ -10,7 +10,7 @@ class Content extends React.Component {
         return (
           <div className="Content">
     
-            <h2>CONTENT</h2>
+            <h2>CONTENT AREA</h2>
 
             <Switch>
               <Route exact path='/' component={Home} />
